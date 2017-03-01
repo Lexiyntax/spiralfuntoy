@@ -1,5 +1,10 @@
 #!/usr/bin/python
 
+#
+# Description: 
+#   Spiral slice a space-separated symmetric array into a list
+#
+
 spiral = []
 with open('array.txt','r') as a:
     for line in a:
@@ -27,4 +32,5 @@ while (len(spiral) > 0):
         for x in reversed(spiral):
             reformed.append( x.pop(0) )
 
+# TODO: flatten list for prettier output and easier reuse
 print reformed
